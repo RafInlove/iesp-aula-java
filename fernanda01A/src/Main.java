@@ -38,7 +38,7 @@ public class Main {
 
         if (media >= 70) {
             System.out.println("Portanto, você foi aprovado !");
-        } else if (media < 69) {
+        } else if (media < 40) {
             System.out.println("Sinto muito, você foi reprovado.");
         }
 
