@@ -3,7 +3,5 @@ public class Funcionario {
     String nome;
     double salarioBruto;
     double salarioLiquido;
-
-
-
+    
 }
