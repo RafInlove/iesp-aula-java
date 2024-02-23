@@ -10,14 +10,14 @@ public class Main {
         System.out.println("Me diga sua matrícula ");
         a.matricula = ler.nextInt();
         System.out.println("Qual é o seu salário bruto ? ");
-        a.salarioBruto = ler.nextDouble();
+        i.salarioBruto = ler.nextDouble();
 
         System.out.println("funcionário: " +a.nome);
         System.out.println("matrícula: " +a.matricula);
-        System.out.println("Salário Bruto: " +a.salarioBruto);
+        System.out.println("Salário Bruto: " +i.salarioBruto);
 
-        i.aplicarDesconto(a.salarioBruto, i.desconto);
+        i.aplicarDesconto(i.salarioBruto, i.desconto);
 
-        System.out.println("Salário Líquido: " +i.totalDesconto);
+        System.out.println("Salário Líquido: " +i.salarioLiquido);
     }
 }
