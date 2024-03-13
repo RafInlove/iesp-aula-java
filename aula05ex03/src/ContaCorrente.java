@@ -30,6 +30,6 @@ public class ContaCorrente extends ContaBancaria {
     }
 
     public String exibirDados() {
-        return "Titular: " + getTitular() + "\nSaldo: " + getSaldo();
+        return "Titular: " + getTitular() + "\nSaldo: " + getSaldo() + "\nCheque Especial:" +chequeEspecial;
     }
 }
