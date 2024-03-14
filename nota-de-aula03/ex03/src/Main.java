@@ -23,12 +23,12 @@ public class Main {
         // Controle de doWhile
         String repetir;
         do {
-            System.out.println("Selecione o tipo de conta:\n1. Corrente\n2.Poupança");
+            System.out.println("Selecione o tipo de conta:\n1. Corrente\n2. Poupança");
             escolha = ler.nextInt();
 
             switch (escolha) {
                 case 1:
-                    System.out.println("O que deseja fazer ?\n1. Depositar\n2.Sacar\n3. Usar cheque especial\n4. Exibir dados da conta");
+                    System.out.println("O que deseja fazer ?\n1. Depositar\n2. Sacar\n3. Usar cheque especial\n4. Exibir dados da conta");
                     escolhaFiltradaCorrente = ler.nextInt();
 
                     switch (escolhaFiltradaCorrente) {
@@ -55,11 +55,12 @@ public class Main {
                             System.out.println("Quanto de cheque especial você deseja ter acesso ?");
                             double concederChequeEspecial = ler.nextDouble();
 
-                            if (concederChequeEspecial <= c.chequeEspecial) {
+                            if (concederChequeEspecial <= c.valorChequeEspecial) {
+                                c.setValorChequeEspecial(c.valorChequeEspecial - concederChequeEspecial);
                                 System.out.println("Valor concedido");
                                 break;
                             } else {
-                                System.out.println("Valor negado, seu acesso ao cheque especial atualmente é de R$" + c.chequeEspecial);
+                                System.out.println("Valor negado, seu acesso ao cheque especial atualmente é de R$" + c.valorChequeEspecial);
                                 break;
                             }
 
@@ -70,7 +71,7 @@ public class Main {
                     break;
 
                 case 2:
-                    System.out.println("O que deseja fazer ?\n1. Depositar\n2.Sacar\n3. Calcular rendimentos\n4. Exibir dados da conta");
+                    System.out.println("O que deseja fazer ?\n1. Depositar\n2. Sacar\n3. Calcular rendimentos\n4. Exibir dados da conta");
                     escolhaFiltradaPoupanca = ler.nextInt();
 
                     switch (escolhaFiltradaPoupanca) {

@@ -1,5 +1,6 @@
 public class ContaCorrente extends ContaBancaria {
-    double chequeEspecial = 1000;
+    public double valorChequeEspecial = 1000;
+
     // Getters and Setters
     public String getTitular() {
         return titular;
@@ -16,6 +17,13 @@ public class ContaCorrente extends ContaBancaria {
     public void setSaldo(double saldo) {
         this.saldo = saldo;
     }
+    public double getValorChequeEspecial() {
+        return valorChequeEspecial;
+    }
+
+    public void setValorChequeEspecial(double valorChequeEspecial) {
+        this.valorChequeEspecial = valorChequeEspecial;
+    }
     // Funções
     public double depositar(double x) {
         return x;
@@ -26,10 +34,10 @@ public class ContaCorrente extends ContaBancaria {
     }
 
     public double chequeEspecial(double x) {
-        return x;
+        return valorChequeEspecial;
     }
 
     public String exibirDados() {
-        return "Titular: " + getTitular() + "\nSaldo: " + getSaldo() + "\nCheque Especial:" +chequeEspecial;
+        return "Titular: " + getTitular() + "\nSaldo: " + getSaldo() + "\nCheque Especial:" +valorChequeEspecial;
     }
 }
