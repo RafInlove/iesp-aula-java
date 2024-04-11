@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Main {
+public class Mou {
     public static void main (String[] args) {
         Scanner ler = new Scanner(System.in);
         INSS i = new INSS();
