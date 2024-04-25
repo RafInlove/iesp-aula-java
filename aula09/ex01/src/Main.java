@@ -20,5 +20,19 @@ public class Main {
 
         System.out.println(MC.toString());
         System.out.println(MC.getT());
+
+       //--------------------------------------------------------------
+        Animal c1 = new Cachorro("Jou", TipoAnimal.MAMIFERO);
+        c1.emitirSom();
+        ((Cachorro) c1).correr();
+
+       //------------------------------------------------------------
+        Polimorfismo p = new Polimorfismo();
+
+        p.fazerBarulho(c1);
+        p.fazerBarulho(Roger);
+        p.fazerBarulho(Snowbell);
+        p.fazerBarulho(Loro);
+
     }
 }
